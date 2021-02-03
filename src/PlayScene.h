@@ -5,8 +5,6 @@
 #include "Scene.h"
 #include "Button.h"
 #include "Label.h"
-#include "Obstacle.h"
-#include "SpaceShip.h"
 #include "Target.h"
 
 class PlayScene : public Scene
@@ -29,9 +27,7 @@ private:
 	
 	glm::vec2 m_mousePosition;
 
-	SpaceShip* m_pSpaceShip;
 	Target* m_pTarget;
-	Obstacle* m_pObstacle;
 	
 	// UI Items
 	
