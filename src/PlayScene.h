@@ -6,6 +6,7 @@
 #include "Button.h"
 #include "Label.h"
 #include "Target.h"
+#include "Tile.h"
 
 class PlayScene : public Scene
 {
@@ -28,6 +29,12 @@ private:
 	glm::vec2 m_mousePosition;
 
 	Target* m_pTarget;
+
+	//Pathfinding functions and objects
+	void m_buildGrid();
+	void m_setGridEnabled(bool state) const;
+	std::vector<Tile*> m_pGrid;
+	
 	
 	// UI Items
 	

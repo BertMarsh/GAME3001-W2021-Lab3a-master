@@ -11,7 +11,7 @@ Tile::Tile()
 	setWidth(Config::TILE_SIZE);
 	setHeight(Config::TILE_SIZE);
 
-	setType(TILE);
+	//setType(TILE);
 }
 
 Tile::~Tile()
@@ -20,7 +20,9 @@ Tile::~Tile()
 void Tile::draw()
 {
 	Util::DrawRect(getTransform()->position, getWidth(), getHeight());
+	//TextureManager::Instance()->draw("tile", getTransform()->position.x, getTransform()->position.y, 0, 255, true);
 }
+	
 
 void Tile::update()
 {
