@@ -7,6 +7,13 @@
 class Tile: public DisplayObject
 {
 public:
+	//Constructor
+	Tile();
+	//Destructor
+	~Tile();
+
+	
+	//Life cycle functions
 	void draw() override;
 	void update() override;
 	void clean() override;
@@ -15,4 +22,4 @@ private:
 };
 
 
-#endif /*__TILE__*/
+#endif /*defined (__TILE__)*/
